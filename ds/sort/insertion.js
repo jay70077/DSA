@@ -4,11 +4,6 @@ Default sort() in JavaScript uses insertion sort by V8 Engine of Chrome and Merg
 sort by Mozilla Firefox and Safari.
 
 */
-function swap(arr,i,j){
-    var temp = arr[i]
-    arr[i] = arr[j]
-    arr[j] = temp
-}
 function insertionSort(inputArr){
         let length = inputArr.length;
         for (let i = 1; i < length; i++) {
