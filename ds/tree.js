@@ -1,3 +1,5 @@
+/* we can handle tree travers in js by recusrive function
+*/
 const tree = {
     title:'NodeA',
     child:[
