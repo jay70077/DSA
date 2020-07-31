@@ -35,6 +35,12 @@ function treeTravers(node){
     if(node.child){
         node.child.map((child)=>{
            console.log('ChildNode' , child)
+           if(child.child){
+            child.child.map((childofchild)=>{
+                console.log('childofchild' , childofchild)
+                treeTravers(childofchild)
+             })
+           }
            treeTravers(child)
         })
     }
